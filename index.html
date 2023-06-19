@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar has-shadow is-primary">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img src="https://raw.githubusercontent.com/iamshaunjp/bulma-ui-build/lesson-4/assets/logo.png"
+                    alt="site logo" style="max-height: 70px;" class="p-2">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu " id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item">My Account</a>
+                <a class="navbar-item">Shopping Cart (0)</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Bread Crumbs -->
+
+    <div class="section pt-4 pb-0">
+        <div class="breadcrumb has-arrow-separator">
+            <ul class="container is-size-6">
+                <li><a class="has-text-grey">Coffee Ninja</a></li>
+                <li><a class="has-text-grey">Shop</a></li>
+                <li class="is-active"><a>Docker Dark Roast</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product Info -->
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-6-tablet is-3-desktop">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+                    <h2 class="is-size-3-mobile is-size-2-desktop is-size-4-tablet subtitle">Dark Roast</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iure a quaerat, molestiae
+                        voluptatem earum minus, ut vero quisquam alias id harum quidem tempore provident deleniti
+                        consectetur error, repudiandae quibusdam.</p>
+                </div>
+                <div class="column is-6-tablet is-5-desktop"><img
+                        src="https://raw.githubusercontent.com/iamshaunjp/bulma-ui-build/lesson-7/assets/product.png"
+                        alt=""></div>
+                <div class="column is-12-tablet is-4-desktop">
+                    <div class="is-size-4 mb-4">$10.95</div>
+                    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <form>
+                        <div class="field">
+                            <div class="control mb-6">
+                                <div class="select is-dark">
+                                    <select name="" id="">
+                                        <option value="">Small (250g)</option>
+                                        <option value="">Medium (500g)</option>
+                                        <option value="">Large (750g)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="button is-primary">Add to Card</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <!-- tablet content -->
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details"><a>Product Details</a></li>
+                            <li data-target="delivery-information"><a>Delivery Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-5 title">Product Details</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quas quod nostrum, cum
+                                explicabo sit unde ad maiores ratione quia inventore aliquid quis libero accusamus
+                                possimus aspernatur alias nihil quos?</p>
+                        </div>
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-size-5 title">Delivery Information</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quas quod nostrum, cum
+                                explicabo sit unde ad maiores ratione quia inventore aliquid quis libero accusamus
+                                possimus aspernatur alias nihil quos?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5-tablet">
+                    <div class="message">
+                        <div class="message-header">
+                            <p>Ear Points with the Coffee Club</p>
+                        </div>
+                        <div class="message-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi quae id pariatur!
+                                Eligendi in quasi cupiditate voluptatum quos repellendus consequatur alias, mollitia
+                                similique corrupti odio dolorem ea sed ipsa.
+                            </p>
+                            <div class="has-text-centered">
+                                <button class="button mt-5" id="signup">Sign Up</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="section">
+        <div class="container">
+            <h3 class="title has-text-centered is-size-4">Related Products</h3>
+            <div class="columns mt-5 is-8 is-variable is-centered">
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6"><img
+                                src="https://raw.githubusercontent.com/iamshaunjp/bulma-ui-build/lesson-12/assets/p1.png"
+                                alt=""></div>
+                        <div class="card-content">
+                            <p>$12.95</p>
+                            <p class="title is-size-5">Cartardo-cup</p>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="card-footer-item">
+                                <a href="">View Product</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6"><img
+                                src="https://raw.githubusercontent.com/iamshaunjp/bulma-ui-build/lesson-12/assets/p2.png"
+                                alt=""></div>
+                        <div class="card-content">
+                            <p>$12.95</p>
+                            <p class="title is-size-5">Docker Light</p>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="card-footer-item">
+                                <a href="">View Product</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-6"><img
+                                src="https://raw.githubusercontent.com/iamshaunjp/bulma-ui-build/lesson-12/assets/p3.png"
+                                alt=""></div>
+                        <div class="card-content">
+                            <p>$12.95</p>
+                            <p class="title is-size-5">Coffee Crush</p>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="card-footer-item">
+                                <a href="">View Product</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white p-5">
+            <h3 class="title mb-6">Join the Club</h3>
+            <form>
+                <div class="field">
+                    <label for="" class="label">Name</label>
+                    <div class="control">
+                        <input type="text" class="input" name="" id="" placeholder="Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="" class="label">Email</label>
+                    <div class="control">
+                        <input type="email" class="input" name="" id="" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="" class="checkbox">
+                        <input type="checkbox" name="" id="" placeholder="Name"> I agree to the <a href="">Terms and
+                            Conditions</a>
+                    </label>
+                </div>
+                <div class="mt-6 has-text-centered"><button class="button is-warning">Sign Up</button></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Copyright 2020 Coffee Ninja</p>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+
+    // For responsive navbar burger Icon
+    const burgerIcon = document.querySelector('#burger');
+    const navbarMenu = document.querySelector('#nav-links');
+
+    burgerIcon.addEventListener('click', () => {
+        navbarMenu.classList.toggle('is-active');
+    })
+
+    // Tabs
+    const tabs = document.querySelectorAll('.tabs li')
+    const tabContentBoxes = document.querySelectorAll('#tab-content > div')
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(item => item.classList.remove('is-active'))
+            tab.classList.add('is-active')
+
+            const target = tab.dataset.target;
+            tabContentBoxes.forEach(box => {
+                if (box.getAttribute('id') === target) {
+                    box.classList.remove('is-hidden')
+                } else {
+                    box.classList.add('is-hidden')
+                }
+            })
+        })
+    })
+
+    //Modal for Sign Up button
+    const signupButton = document.querySelector('#signup');
+    const modelBg = document.querySelector('.modal-background');
+    const modal = document.querySelector('.modal');
+
+    signupButton.addEventListener('click', () => {
+        modal.classList.add('is-active');
+    })
+
+    modelBg.addEventListener('click', () => {
+        modal.classList.remove('is-active');
+    })
+
+</script>
+
+</html>
